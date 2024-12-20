@@ -1,0 +1,141 @@
+/* Very small phones (max-width: 360px) */
+@media (min-width: 1px) and (max-width: 360px) {
+    #faq-container {
+        padding: clamp(1rem, 2%, 4%);
+    }
+
+    #faq-header-div {
+        margin: 0 auto clamp(30px, 5vw, 60px);
+    }
+
+    .header-font {
+        font-size: clamp(1.4rem, 3vw, 2.5rem);
+    }
+
+    .header-font-2 {
+        font-size: clamp(0.9rem, 3vw, 1.5rem);
+    }
+
+    .body-font {
+        font-size: clamp(0.8rem, 3vw, 1.2rem);
+        padding-left: clamp(1rem, 2%, 4%);
+    }
+
+    .steps-font {
+        font-size: clamp(0.7rem, 3vw, 1rem);
+        line-height: clamp(1rem, 3vw, 1.5rem);
+    }
+
+    .steps {
+        margin: clamp(1rem, 2%, 2rem) clamp(1rem, 2%, 2rem) clamp(1rem, 2%, 2rem) clamp(0.5rem, 1%, 1rem);
+        padding-left: clamp(24px, 5vw, 48px);
+    }
+
+    #faq-header-div h1 {
+        margin-bottom: clamp(0, 1%, 1rem);
+    }
+
+    .answer {
+        margin-top: clamp(1rem, 2%, 2rem);
+    }
+
+    .question-container {
+        padding: clamp(2rem, 5%, 4rem) clamp(1rem, 2%, 2rem) clamp(2rem, 5%, 4rem) clamp(1rem, 2%, 2rem);
+        margin: clamp(1rem, 2%, 2rem) clamp(1rem, 2%, 2rem) clamp(1rem, 2%, 2rem) clamp(0.5rem, 1%, 1rem);
+    }
+}
+
+/* Small phones (max-width: 576px) */
+@media (min-width: 361px) and (max-width: 576px) {
+    body {
+        padding: clamp(20px, 5vw, 80px) clamp(50px, 10vw, 150px);
+    }
+
+    #faq-container {
+        padding: clamp(1rem, 2%, 4%);
+    }
+
+    #faq-header-div {
+        margin: 0 auto clamp(30px, 5vw, 60px);
+    }
+
+    #faq-header-div h1 {
+        padding: 0 clamp(-10px, -2vw, -5px) clamp(0.5rem, 1%, 1rem);
+        margin-top: clamp(5px, 1%, 1rem);
+    }
+
+    .steps {
+        margin: clamp(1rem, 2%, 2rem) clamp(1rem, 2%, 2rem) clamp(1rem, 2%, 2rem) clamp(0.5rem, 1%, 1rem);
+        padding-left: clamp(24px, 5vw, 48px);
+    }
+
+    .icon-container i {
+        margin-top: clamp(36px, 5vw, 48px);
+    }
+    
+     .body-font {
+        font-size: clamp(1rem, 3vw, 1.2rem);
+         line-height: clamp(1.5rem, 3vw, 2rem);
+    }
+
+    .steps-font {
+        font-size: clamp(0.8rem, 3vw, 1rem);
+        line-height: clamp(1.5rem, 3vw, 2rem);
+    }
+
+    .answer {
+        margin-top: clamp(1.5rem, 2%, 2rem);
+    }
+}
+
+/* Large phones and smaller tablets (min-width: 577px and max-width: 767px) */
+@media (min-width: 577px) and (max-width: 767px) {
+    body {
+        padding: clamp(30px, 5vw, 80px) clamp(70px, 10vw, 200px);
+    }
+
+    #faq-container {
+        padding: clamp(2%, 4%, 4%);
+    }
+
+    #faq-header-div h1 {
+        padding: clamp(-10px, -2vw, -5px) clamp(20px, 4%, 60px);
+    }
+
+    .steps {
+        margin: clamp(1rem, 2%, 2rem) clamp(1rem, 2%, 2rem) clamp(1rem, 2%, 2rem) clamp(0.5rem, 1%, 1rem);
+        padding-left: clamp(24px, 5vw, 48px);
+    }
+
+    .answer {
+        margin-top: clamp(1rem, 2%, 2rem);
+    }
+}
+
+/* Desktop/Large tablets (min-width: 768px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #faq-container {
+    }
+
+    .header-font {
+        font-size: clamp(2.5rem, 3vw, 2.5rem);
+    }
+
+    .body-font {
+        font-size: clamp(0.8rem, 3vw, 1.2rem);
+    }
+
+    .steps-font {
+        font-size: clamp(0.7rem, 3vw, 1rem);
+        line-height: clamp(1rem, 3vw, 1.5rem);
+    }
+
+    .steps {
+        margin: clamp(1rem, 2%, 2rem) clamp(1rem, 2%, 2rem) clamp(1rem, 2%, 2rem) clamp(0.5rem, 1%, 1rem);
+        padding-left: clamp(24px, 5vw, 48px);
+    }
+
+    .answer {
+        margin-top: clamp(1rem, 2%, 2rem);
+    }
+}

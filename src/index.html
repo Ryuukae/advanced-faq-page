@@ -1,0 +1,93 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Head section for metadata and styles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple FAQ page with answers to frequently asked questions. Find help regarding order tracking, return policy, and more.">
+    <meta name="keywords" content="FAQ, Frequently Asked Questions, Help, Order Tracking, Return Policy">
+    <meta name="author" content="Adam Ross DeStafeno">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Simple FAQ Page">
+    <meta property="og:description" content="Browse through the most frequently asked questions on our FAQ page. Learn about order tracking, return policies, and much more.">
+    <meta property="og:type" content="website">
+    
+    <title>Simple FAQ Page</title>
+
+    <!-- Styles section -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles/font-styles.css" type="text/css">
+    <link rel="stylesheet" href="./styles/color-pallet.css" type="text/css">
+    <link rel="stylesheet" href="./styles/base-styles.css" type="text/css">
+    <link rel="stylesheet" href="./styles/responsive-styles.css" type="text/css">
+    <script src="./script.js" type="text/javascript" defer></script>
+</head>
+
+<!-- Body section -->
+<body>
+<div id="faq-container">
+    <!-- Header section -->
+    <header>
+        <div id="faq-header-div">
+            <div class="icon-container">
+                <i class="fas fa-question-circle"></i>
+            </div>
+            <h1 class="header-font">Frequently Asked Questions</h1>
+            <p class="subtitle body-font">Browse through the most frequently asked questions</p>
+        </div>
+    </header>
+
+    <!-- Questions and answers section -->
+    <div class="questions-wrapper">
+        <!-- Question 1 -->
+        <div class="question-container">
+            <div class="question-header">
+                <h2 class="header-font-2">
+                    <i class="fas fa-box-open question-icon"></i>
+                    <span class="question-header-text">How can I track my order?</span>
+                </h2>
+                <button class="toggle-btn" aria-label="Toggle answer">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+            <!-- Answer 1 -->
+            <div class="answer">
+                <p class="body-font">You can track your order using the following steps:</p>
+                <ol class="steps steps-font">
+                    <li>Go to the <a href="#"><i class="fas fa-external-link-alt"></i> Tracking page</a>.</li>
+                    <li>Enter your order number and email address.</li>
+                    <li>Click on the <strong>Track Order</strong> button to view the current status of your shipment.</li>
+                </ol>
+                <p class="body-font">If you encounter any issues, please visit our <a href="#"><i class="fas fa-external-link-alt"></i> Help Center</a>.</p>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question-container">
+            <div class="question-header">
+                <h2 class="header-font-2">
+                    <i class="fas fa-undo question-icon"></i>
+                    <span class="question-header-text">What is your return policy?</span>
+                </h2>
+                <button class="toggle-btn" aria-label="Toggle answer">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+            <!-- Answer 2 -->
+            <div class="answer">
+                <p class="body-font">We offer a 30-day return policy on most items. Here are some key points:</p>
+                <ol class="steps steps-font">
+                    <li><strong><i class="fas fa-check"></i> Items must be in original condition:</strong> Unworn, unused, and unwashed.</li>
+                    <li><strong><i class="fas fa-box"></i> Include original packaging and tags:</strong> All items should be returned with their original packaging and tags.
+                    </li>
+                    <li><strong><i class="fas fa-receipt"></i> Proof of purchase:</strong> A receipt or proof of purchase is required.</li>
+                </ol>
+                <p class="body-font">For more detailed information, read our full <a href="#"><i class="fas fa-external-link-alt"></i> Return Policy</a>.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

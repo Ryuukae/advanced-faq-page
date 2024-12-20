@@ -1,0 +1,293 @@
+/* Reset Browser Styles: Applies common resets to remove default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles: Sets the base font size and background color for the HTML document */
+html {
+    font-size: 16px;
+    background-color: var(--dark-white);
+}
+
+/* Body Styles: Defines typography and layout settings for the main site body */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 40px 20px;
+    color: var(--black);
+    background: linear-gradient(135deg, var(--dark-white) 0%, #E8EFFF 100%);
+    min-height: 100vh;
+}
+
+/* FAQ Container: Styles the main container for the FAQ content */
+#faq-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(78, 128, 238, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* FAQ Header: Centers and styles the header section of the FAQ */
+#faq-header-div {
+    text-align: center;
+    margin: 0 auto 60px;
+    max-width: 600px;
+}
+
+/* Icon Container: Manages spacing and applies animation to FAQ icons */
+.icon-container {
+    margin-bottom: 20px;
+    animation: bounce 2s infinite;
+}
+
+/* Icon Styling: Adjusts the size and appearance of the icons */
+.icon-container i {
+    font-size: 48px;
+    color: var(--blue);
+    opacity: 0.9;
+}
+
+/* FAQ Header Title: Adds gradient styling and animation to header titles */
+#faq-header-div h1 {
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--dark-blue) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* FAQ Header Paragraph: Styles the text below the header title */
+#faq-header-div p {
+    color: #666;
+    margin-bottom: 0;
+    opacity: 0.8;
+    animation: slideUp 0.8s ease-out;
+}
+
+/* Questions Wrapper: Organizes and spaces FAQ questions in a column layout */
+.questions-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Question Container: Styles individual FAQ items with borders and animations */
+.question-container {
+    animation: fadeIn 0.8s ease-in;
+    padding: 30px;
+    background-color: var(--white);
+    border: 1px solid var(--grey);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Question Header: Positions and aligns the title and toggle button for each question */
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Question Header Text: Adds an underline style to question headers */
+.question-header .question-header-text {
+    text-decoration: underline;
+    text-decoration-color: var(--blue);
+}
+
+/* Question Icon: Styles the icon next to question headings */
+.question-icon {
+    color: var(--blue);
+    margin-right: 12px;
+    font-size: 1.2em;
+}
+
+/* Toggle Button: Sets layout and styling for buttons that expand/collapse answers */
+.toggle-btn {
+    background: none;
+    border: none;
+    color: var(--blue);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Toggle Button Hover: Adds a hover effect to the toggle button */
+.toggle-btn:hover {
+    background-color: rgba(78, 128, 238, 0.1);
+}
+
+/* Active Toggle Button: Rotates the toggle icon for active FAQ items */
+.question-container.active .toggle-btn i {
+    transform: rotate(180deg);
+}
+
+/* Answer Content: Defines the visibility and transitions of FAQ answers */
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    margin-top: 20px;
+}
+
+/* FAQ Item Hover: Applies hover effects to each question container */
+.question-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(78, 128, 238, 0.1);
+    border: 1px solid var(--blue);
+    transition: transform 0.3s ease, box-shadow 0.1s ease, border-color 0.1s ease;
+}
+
+/* FAQ Item Active/Before: Adds gradient and opacity to active/hovered FAQ items */
+.question-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--blue), #6B9AFF);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.question-container:hover::before,
+.question-container.active::before {
+    opacity: 1;
+}
+
+/* Question Header H2: Styles the question header text */
+.question-container h2 {
+    margin: 0;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+}
+
+/* Steps: Adds spacing and padding for ordered lists inside FAQ */
+.steps {
+    margin: 20px 12px;
+    padding-left: 24px;
+}
+
+/* Steps Items: Customizes individual list items inside steps */
+.steps li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 8px;
+    gap: 8px;
+}
+
+/* Steps Icons: Styles inline icons used in steps */
+.steps li i {
+    color: var(--blue);
+    margin-top: 4px;
+}
+
+/* Steps Marker: Customizes list markers with color and weight */
+.steps li::marker {
+    color: var(--blue);
+    font-weight: 600;
+}
+
+/* Anchor Links: Adds styling and hover behavior for links */
+a {
+    color: var(--blue);
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Anchor Links After: Adds an underline effect to links */
+a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--blue);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+/* FAQ Header Text Hover/Active: Changes underline styling for hover or active headers */
+.question-container:hover .question-header .question-header-text,
+.question-container.active .question-header .question-header-text {
+    text-decoration: underline;
+    text-decoration-color: var(--blue);
+}
+
+.question-container .question-header .question-header-text {
+    text-decoration: none;
+}
+
+/* Anchor Links Hover: Changes text color and reveals underline when hovering */
+a:hover {
+    color: #6B9AFF;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Strong Text: Applies a bold color and weight to <strong> tags */
+strong {
+    color: var(--black);
+    font-weight: 600;
+}
+
+/* Fade In Animation: Defines keyframe animation for fading in elements */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide Up Animation: Moves element upward while changing opacity */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 0.8;
+        transform: translateY(0);
+    }
+}
+
+/* Bounce Animation: Bounces an element using a vertical translation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+

@@ -1,0 +1,9 @@
+/* color-pallet.css */
+:root {
+    --dark-blue: rgba(7, 70, 167, 0.79);
+    --blue: #4E80EE;
+    --black: #030616;
+    --grey: #D2D5DA;
+    --dark-white: #F8FAFC;
+    --white: #FFFFFF;
+}
