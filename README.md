@@ -1,27 +1,32 @@
-<!-- Please update value in the {}  -->
-
-<h1 align="center">Simple-FAQ-Challenge | devChallenges</h1>
+<h1 align="center">Advanced-FAQ-Page</h1>
 
 <div align="center">
-A solution for the challenge titled <a href="https://devchallenges.io/challenge/simple-faq-challenge" target="_blank">Simple Frequently Asked Questions (FAQ)</a> from <a 
-href="https://devchallenges.io" 
-target="_blank">devChallenges.io</a>
+  An enhanced version of the solution for the challenge titled 
+  <a href="https://devchallenges.io/challenge/simple-faq-challenge" target="_blank">
+    Simple Frequently Asked Questions (FAQ)
+  </a>
+  from 
+  <a href="https://devchallenges.io" target="_blank">devChallenges.io</a>
 </div>
-<div align="center" style="font-size: 13px; margin-top:2px;">Submitted by <span style="color: white;">Adam Ross DeStafeno</span></div>
+
+<div align="center" style="font-size: 13px; margin-top: 2px;">
+  <p>
+    <small>by</small> 
+    <i>
+      <a href="https://www.linkedin.com/in/adam-ross-destafeno" style="color: white;" target="_blank">
+        Adam Ross DeStafeno
+      </a>
+    </i>
+  </p>
+</div>
 
 <div align="center">
   <h3>
-    <a href="https://ryuukae.github.io/simple-faq-page/src/index.html">
-      Demo
-    </a>
+    <a href="https://ryuukae.io/advanced-faq-page/src/index.html">Demo</a>
     <span> | </span>
-    <a href="https://www.github.com/Ryuukae/simple-faq-page">
-      Solution
-    </a>
+    <a href="https://www.github.com/Ryuukae/advanced-faq-page">Solution</a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenge/simple-faq-challenge">
-      Challenge
-    </a>
+    <a href="https://devchallenges.io/challenge/simple-faq-challenge">Challenge</a>
   </h3>
 </div>
 
@@ -66,13 +71,23 @@ This project demonstrates proficiency in:
    The project that can be used to enhance the UI. is designed to be easily customizable and can be further extended with additional features such as localization support or 
 integration with backend APIs.
 
-
 ### What I learned
 
-<!-- Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge. -->
-- How to utilize the CSS media feature 'pointer' to ascertain the category of the user's device by identifying the primary pointing device, (such as a mouse), and if so, 
-  how 
+- How to utilize the CSS media feature 'pointer' to ascertain the category of the user's device by identifying the primary pointing device, (such as a mouse), and if so, how
   accurate the primary pointing device is.
+
+- Implementing modular CSS architecture for better maintainability and scalability.
+
+- Writing semantic and accessible HTML, ensuring better compatibility with screen readers and assistive technologies.
+
+- Leveraging JavaScript event delegation to manage dynamic elements efficiently.
+
+- Utilizing CSS transitions to enhance user interactions with smooth animations.
+
+- Incorporating third-party libraries, such as Font Awesome, to improve the visual appeal of the project while maintaining simplicity.
+
+- Applying responsive web design principles to create layouts that adapt seamlessly across various screen sizes and devices.
+
 
 ### Useful resources
 
@@ -91,7 +106,8 @@ integration with backend APIs.
 - Accessibility considerations for better inclusivity
 - Responsive layout that adapts to different screen sizes
 - Toggle buttons for the question hiding and showing feature</i>
-
+         
+- - -
 
 ### Project Structure
 - - - _       
@@ -129,7 +145,7 @@ src/
 
 ## Author Credits
 
-This <i><b>[repository](https://www.github.com/Ryuukae/simple-faq-page)</i></b> is...
+This <i><b>[repository](https://www.github.com/Ryuukae/advanced-faq-page)</i></b> is...
 - -[x] <i><b><u>Owned 
 - - - [x] Written
 - - - - [x] Maintained</u></b></i> 
